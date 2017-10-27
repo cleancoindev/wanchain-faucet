@@ -15,7 +15,7 @@ let g_tx_index = 0;
             g_int_serial  = web3.eth.getTransactionCount(coinbase);
             g_tx_index = 0;
         });
-exports.giveEtherTo = function (receiverAddress, etherAmout=1)
+exports.giveEtherTo = function (receiverAddress, etherAmout=12)
 {
     var privateKey = new Buffer(coinbaseSK,'hex');
     var amount = web3.toWei(etherAmout, 'ether');
